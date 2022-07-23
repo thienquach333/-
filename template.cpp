@@ -12,9 +12,9 @@ typedef long long ll;
 typedef long double ld;
 typedef pair<int, int> ii;
 
-template<class X, class Y> bool minimize(X &x, const Y &y) {
+template<class X, class Y> bool minimize(X &x, const Y &y){
     X eps = 1e-9;
-    if (x > y + eps){
+    if (x > y + eps) {
         x = y;
         return 1;
     }
@@ -23,7 +23,7 @@ template<class X, class Y> bool minimize(X &x, const Y &y) {
 
 template<class X, class Y> bool maximize(X &x, const Y &y) {
     X eps = 1e-9;
-    if (x + eps < y){
+    if (x + eps < y) {
         x = y;
         return 1;
     }
@@ -46,5 +46,6 @@ int main(){
         freopen(TASK".inp", "r", stdin);
         freopen(TASK".out", "w", stdout);
     }
+
     return 0;
 }
