@@ -1,4 +1,6 @@
 #include <bits/stdc++.h>
+//#pragma GCC optimize("O2")
+//#pragma GCC target("avx,avx2,fma")
 using namespace std;
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
@@ -36,12 +38,13 @@ const int mod = (int) 1e9 + 7;
 const int oo = (int) 1e9 + 99;
 const int maxn = (int) 1e5 + 11;
 const int LOG = (int) 20;
+const ii dxy[] = { {-1, 0}, {1, 0}, {0, 1}, {0, -1} };
 
 
 
 int main(){
     ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-    #define TASK ""
+    #define TASK "LELTREE"
     if(fopen(TASK".inp", "r")) {
         freopen(TASK".inp", "r", stdin);
         freopen(TASK".out", "w", stdout);
