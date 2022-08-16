@@ -44,7 +44,7 @@ const ii dxy[] = { {-1, 0}, {1, 0}, {0, 1}, {0, -1} };
 
 int main(){
     ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-    #define TASK "LELTREE"
+    #define TASK ""
     if(fopen(TASK".inp", "r")) {
         freopen(TASK".inp", "r", stdin);
         freopen(TASK".out", "w", stdout);
